@@ -1,0 +1,11 @@
+includepath h
+
+library
+
+files
+{
+    (h)
+    "*.h"
+}
+
+library ".,SDL"

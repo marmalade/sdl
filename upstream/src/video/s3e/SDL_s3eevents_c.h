@@ -1,6 +1,6 @@
 /*
     SDL - Simple DirectMedia Layer
-    Copyright (C) 1997-2009 Sam Lantinga
+    Copyright (C) 1997-2006 Sam Lantinga
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -19,29 +19,15 @@
     Sam Lantinga
     slouken@libsdl.org
 */
+#include "SDL_config.h"
 
-#ifndef _SDL_config_h
-#define _SDL_config_h
+#include "SDL_s3evideo.h"
 
-#include "SDL_platform.h"
+/* Variables and functions exported by SDL_sysevents.c to other parts 
+   of the native video subsystem (SDL_sysvideo.c)
+*/
+extern void S3E_InitOSKeymap(_THIS);
+extern void S3E_PumpEvents(_THIS);
 
-/* Add any platform that doesn't build using the configure system */
-#if defined(__DREAMCAST__)
-#include "SDL_config_dreamcast.h"
-#elif defined(__MACOS__)
-#include "SDL_config_macos.h"
-#elif defined(__MACOSX__)
-#include "SDL_config_macosx.h"
-#elif defined(__SYMBIAN32__)
-#include "SDL_config_symbian.h"  /* must be before win32! */
-#elif defined(__WIN32__)
-#include "SDL_config_win32.h"
-#elif defined(__OS2__)
-#include "SDL_config_os2.h"
-#elif defined(__S3E__)
-#include "SDL_config_s3e.h"
-#else
-#include "SDL_config_minimal.h"
-#endif /* platform config */
+/* end of SDL_nullevents_c.h ... */
 
-#endif /* _SDL_config_h */

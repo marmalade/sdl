@@ -1,0 +1,94 @@
+[SDL]
+AllowScale "allow scaling"
+
+[SDLKeys]
+CR "key mapping"
+Esc "key mapping"
+Tab "key mapping"
+Shift "key mapping"
+Ctrl "key mapping"
+Bspc "key mapping"
+Spc xx
+Right xx
+Left xx
+Up xx
+Down xx
+0 xx
+1 xx
+2 xx
+3 xx
+4 xx
+5 xx
+6 xx
+7 xx
+8 xx
+9 xx
+A xx
+B xx
+C xx
+D xx
+E xx
+F xx
+G xx
+H xx
+I xx
+J xx
+K xx
+L xx
+M xx
+N xx
+O xx
+P xx
+Q xx
+R xx
+S xx
+T xx
+U xx
+V xx
+W xx
+X xx
+Y xx
+Z xx
+*  xx
+Hash  xx
+LSK  xx
+RSK xx
+F1 xx
+F2 xx
+F3 xx
+F4 xx
+F5 xx
+F6 xx
+F7 xx
+F8 xx
+F9 xx
+F10 xx
+F11 xx
+F12 xx
+NP0 xx
+NP1 xx
+NP2 xx
+NP3 xx
+NP4 xx
+NP5 xx
+NP6 xx
+NP7 xx
+NP8 xx
+NP9 xx
+NPPlus xx
+NPMin xx
+NUMPCR xx
+LS xx
+RS xx
+Ok xx
+Clr xx
+VolUp xx
+VolDwn xx
+Cam xx
+Mic xx
+Fn xx
+Sym xx
+Accept xx
+End xx
+HomePage xx
+

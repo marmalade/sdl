@@ -150,7 +150,7 @@
 #if defined(_MSC_VER) || defined(__BORLANDC__) || \
     defined(__DMC__) || defined(__SC__) || \
     defined(__WATCOMC__) || defined(__LCC__) || \
-    defined(__DECC) || defined(__EABI__)
+    defined(__DECC) || defined(__EABI__) || defined(__ARMCC_VERSION)
 #ifndef __inline__
 #define __inline__	__inline
 #endif

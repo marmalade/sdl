@@ -1,0 +1,7 @@
+#!/usr/bin/env mkb
+option lib
+
+if {{ sys.platform == 'darwin' }}
+    option buildenv=scons
+
+subproject SDL-build

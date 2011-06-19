@@ -1,0 +1,168 @@
+upstream
+{
+    url='http://source.ideaworks3d.com/upstream/SDL-1.2.14.tar.gz'
+    checkin=git
+}
+
+includepaths
+{
+    "local/include"
+}
+
+options
+{
+    compiler=gcc
+}
+
+files
+{
+    SDL.config.txt
+
+    [source]
+    ("upstream/src")
+    SDL.c
+    SDL_error.c
+    SDL_error_c.h
+    SDL_fatal.c
+    SDL_fatal.h
+
+    [source audio]
+    ("upstream/src/audio")
+    SDL_audio.c
+    SDL_audiocvt.c
+    SDL_audiodev.c
+    SDL_audiodev_c.h
+    SDL_audiomem.h
+    SDL_audio_c.h
+    SDL_mixer.c
+    SDL_mixer_m68k.c
+    SDL_mixer_m68k.h
+    SDL_mixer_MMX.c
+    SDL_mixer_MMX.h
+    SDL_mixer_MMX_VC.c
+    SDL_mixer_MMX_VC.h
+    SDL_sysaudio.h
+    SDL_wave.c
+    SDL_wave.h
+
+    [source cdrom]
+    ("upstream/src/cdrom")
+    SDL_cdrom.c
+    SDL_syscdrom.h
+
+    [source cpuinfo]
+    ("upstream/src/cpuinfo")
+    SDL_cpuinfo.c
+
+    [source events]
+    ("upstream/src/events")
+    SDL_active.c
+    SDL_events.c
+    SDL_events_c.h
+    SDL_expose.c
+    SDL_keyboard.c
+    SDL_mouse.c
+    SDL_quit.c
+    SDL_resize.c
+    SDL_sysevents.h
+
+    [source _file]
+    ("upstream/src/file")
+    SDL_rwops.c
+
+    [source joystick]
+    ("upstream/src/joystick")
+    SDL_joystick.c
+    SDL_joystick_c.h
+    SDL_sysjoystick.h
+
+    [source stdlib]
+    ("upstream/src/stdlib")
+    SDL_iconv.c
+    SDL_malloc.c
+    SDL_qsort.c
+    SDL_stdlib.c
+    SDL_string.c
+
+    [source thread]
+    ("upstream/src/thread")
+    SDL_systhread.h
+    SDL_thread.c
+    SDL_thread_c.h
+
+    [source timer]
+    ("upstream/src/timer")
+    SDL_systimer.h
+    SDL_timer.c
+    SDL_timer_c.h
+
+    [source video]
+    ("upstream/src/video")
+    blank_cursor.h
+    default_cursor.h
+    e_log.h
+    e_pow.h
+    e_sqrt.h
+    math_private.h
+    mmx.h
+    SDL_blit.c
+    SDL_blit.h
+    SDL_blit_0.c
+    SDL_blit_1.c
+    SDL_blit_A.c
+    SDL_blit_N.c
+    SDL_bmp.c
+    SDL_cursor.c
+    SDL_cursor_c.h
+    SDL_gamma.c
+    SDL_glfuncs.h
+    SDL_leaks.h
+    SDL_pixels.c
+    SDL_pixels_c.h
+    SDL_RLEaccel.c
+    SDL_RLEaccel_c.h
+    SDL_stretch.c
+    SDL_stretch_c.h
+    SDL_surface.c
+    SDL_sysvideo.h
+    SDL_video.c
+    SDL_yuv.c
+    SDL_yuvfuncs.h
+    SDL_yuv_mmx.c
+    SDL_yuv_sw.c
+    SDL_yuv_sw_c.h
+
+    [source dummydrivers]
+    ("upstream/src/joystick/dummy")
+    SDL_sysjoystick.c
+
+    ("upstream/src/cdrom/dummy")
+    SDL_syscdrom.c
+
+    ("upstream/src/thread/generic")
+    SDL_syscond.c
+    SDL_sysmutex.c
+    SDL_sysmutex_c.h
+    SDL_syssem.c
+    SDL_systhread.c
+    SDL_systhread_c.h
+
+    ("upstream/src/loadso/dummy")
+    SDL_sysloadso.c
+
+    [source s3edrivers]
+    ("upstream/src/audio/s3e")
+    SDL_s3eaudio.h
+    SDL_s3eaudio.c
+
+    ("upstream/src/video/s3e")
+    SDL_s3eevents.c
+    SDL_s3eevents_c.h
+    SDL_s3emouse.c
+    SDL_s3emouse_c.h
+    SDL_s3evideo.c
+    SDL_s3evideo.h
+
+    ("upstream/src/timer/s3e")
+    SDL_systimer.c
+}

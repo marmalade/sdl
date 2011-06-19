@@ -1,6 +1,6 @@
 /*
     SDL - Simple DirectMedia Layer
-    Copyright (C) 1997-2009 Sam Lantinga
+    Copyright (C) 1997-2006 Sam Lantinga
 
     This library is free software; you can redistribute it and/or
     modify it under the terms of the GNU Lesser General Public
@@ -347,9 +347,6 @@ extern VideoBootStrap DirectFB_bootstrap;
 #if SDL_VIDEO_DRIVER_PS2GS
 extern VideoBootStrap PS2GS_bootstrap;
 #endif
-#if SDL_VIDEO_DRIVER_PS3
-extern VideoBootStrap PS3_bootstrap;
-#endif
 #if SDL_VIDEO_DRIVER_GGI
 extern VideoBootStrap GGI_bootstrap;
 #endif
@@ -407,11 +404,11 @@ extern VideoBootStrap OS2FSLib_bootstrap;
 #if SDL_VIDEO_DRIVER_AALIB
 extern VideoBootStrap AALIB_bootstrap;
 #endif
-#if SDL_VIDEO_DRIVER_CACA
-extern VideoBootStrap CACA_bootstrap;
-#endif
 #if SDL_VIDEO_DRIVER_DUMMY
 extern VideoBootStrap DUMMY_bootstrap;
+#endif
+#if SDL_VIDEO_DRIVER_S3E
+extern VideoBootStrap S3E_bootstrap;
 #endif
 
 /* This is the current video device */

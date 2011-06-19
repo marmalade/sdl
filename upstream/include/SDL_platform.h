@@ -67,10 +67,10 @@
 #undef __LINUX__
 #define __LINUX__	1
 #endif
-#if defined(__APPLE__)
+#if defined(__APPLE__) && !defined(__S3E__)
 #undef __MACOSX__
 #define __MACOSX__	1
-#elif defined(macintosh)
+#elif defined(macintosh) && !defined(__S3E__)
 #undef __MACOS__
 #define __MACOS__	1
 #endif
