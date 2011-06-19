@@ -1,2 +1,6 @@
 upstream
 SDL-*.tar.gz
+build_sdl_*
+lib
+sdl_*.mdev
+sdl_*.msrc

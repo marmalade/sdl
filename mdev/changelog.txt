@@ -1,0 +1,11 @@
+sdl (1.2.14-5)
+
+  * move to github
+
+ -- Marmalade Package Team <packages@marmalademail.com>  Sun, 19 Jun 2011
+
+sdl (1.2.14-3)
+
+  * fix macosx build by modifying SDL_platform.h
+
+ -- Marmalade Package Team <packages@marmalademail.com>  Wed, 11 May 2011

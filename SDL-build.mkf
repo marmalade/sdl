@@ -6,7 +6,7 @@ upstream
 
 includepaths
 {
-    "local/include"
+    "upstream/include"
 }
 
 options

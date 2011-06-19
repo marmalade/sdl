@@ -1,0 +1,53 @@
+Package: sdl
+Version: 1.2.14
+Revision: 5
+Maintainer: Marmalade Package Team <packages@ideaworkslabs.com>
+Build: ./SDL.mkb --arm --make --no-ide
+Build-Platform: ./SDL.mkb --x86 --make --no-ide
+Description: |
+ Simple DirectMedia Layer.
+ SDL is a library that allows programs portable low level access to a video
+ framebuffer, audio output, mouse, and keyboard.
+Contents-Source:
+ - SDL.config.txt
+ - README.rst
+
+ - upstream/include/SDL_config_s3e.h
+ - upstream/include/SDL_config.h
+
+ - upstream/src/audio/SDL_audio.c
+ - upstream/src/audio/SDL_sysaudio.h
+ - upstream/src/video/SDL_video.c
+ - upstream/src/video/SDL_sysvideo.h
+
+ - upstream/src/audio/s3e/SDL_s3eaudio.h
+ - upstream/src/audio/s3e/SDL_s3eaudio.c
+ - upstream/src/video/s3e/SDL_s3evideo.h
+ - upstream/src/video/s3e/SDL_s3evideo.c
+ - upstream/src/video/s3e/SDL_s3eevents_c.h
+ - upstream/src/video/s3e/SDL_s3eevents.c
+ - upstream/src/video/s3e/SDL_s3emouse_c.h
+ - upstream/src/video/s3e/SDL_s3emouse.c
+ - upstream/src/timer/s3e/SDL_timer.c
+ - upstream/src/timer/s3e/SDL_systimer.c
+ - SDL-build.mkf
+ - SDL.mkf
+ - SDL.mkb
+ - example/testbitmap.mkb
+ - example/testplatform.mkb
+ - example/testsprite.mkb
+ - example/testvidinfo.mkb
+Contents:
+ - upstream/include/*.h: h
+ - lib/arm/libSDL_d.a
+ - lib/arm/libSDL.a
+Contents-Platform:
+  win32:
+    - lib/x86/SDL.lib
+    - lib/x86/SDL_d.lib
+  linux:
+    - lib/x86/linux/libSDL.a
+    - lib/x86/linux/libSDL_d.a
+  macosx:
+    - lib/x86/darwin/libSDL.a
+    - lib/x86/darwin/libSDL_d.a

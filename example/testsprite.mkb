@@ -1,0 +1,11 @@
+#!/usr/bin/env mkb
+
+package sdl
+
+subproject SDL
+
+files
+{
+        ("../local/test")
+        testsprite.c
+}
