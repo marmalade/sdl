@@ -1,6 +1,10 @@
 upstream
 SDL-*.tar.gz
 build_sdl_*
+example/build_*
+example/iwtrace.txt
+example/data
+example/run_*
 lib
 sdl_*.mdev
 sdl_*.msrc

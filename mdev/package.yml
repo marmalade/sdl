@@ -1,9 +1,8 @@
 Package: sdl
 Version: 1.2.14
-Revision: 5
+Revision: 6
 Maintainer: Marmalade Package Team <packages@ideaworkslabs.com>
-Build: ./SDL.mkb --arm --make --no-ide
-Build-Platform: ./SDL.mkb --x86 --make --no-ide
+Mkbs: SDL.mkb
 Description: |
  Simple DirectMedia Layer.
  SDL is a library that allows programs portable low level access to a video
@@ -41,6 +40,8 @@ Contents:
  - upstream/include/*.h: h
  - lib/arm/libSDL_d.a
  - lib/arm/libSDL.a
+ - SDL.mkf
+ - SDL.config.txt
 Contents-Platform:
   win32:
     - lib/x86/SDL.lib

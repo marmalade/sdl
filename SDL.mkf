@@ -1,9 +1,9 @@
 includepath h
 
-library
-
 files
 {
+    SDL.config.txt
+
     (h)
     "*.h"
 }

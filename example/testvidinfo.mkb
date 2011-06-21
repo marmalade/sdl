@@ -6,6 +6,6 @@ subproject SDL
 
 files
 {
-        ("../local/test")
+        ("../upstream/test")
         testvidinfo.c
 }

@@ -1,3 +1,10 @@
+sdl (1.2.14-6)
+
+  * include SDK.config.txt in package.
+  * make exampels work again.
+
+ -- Marmalade Package Team <packages@marmalademail.com>  Mon, 20 Jun 2011
+
 sdl (1.2.14-5)
 
   * move to github
