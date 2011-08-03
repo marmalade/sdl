@@ -1,18 +1,24 @@
+sdl (1.2.14-7)
+
+  * package.yml: remove Version and Revision fields.
+
+ -- Sam Clegg <sam@marmalademail.com>  Wed, 03 Aug 2011 00:15:08 +0000
+
 sdl (1.2.14-6)
 
   * include SDK.config.txt in package.
   * make exampels work again.
 
- -- Marmalade Package Team <packages@marmalademail.com>  Mon, 20 Jun 2011
+ -- Sam Clegg <sam@marmalademail.com>  Mon, 20 Jun 2011
 
 sdl (1.2.14-5)
 
   * move to github
 
- -- Marmalade Package Team <packages@marmalademail.com>  Sun, 19 Jun 2011
+ -- Sam Clegg <sam@marmalademail.com>  Sun, 19 Jun 2011
 
 sdl (1.2.14-3)
 
   * fix macosx build by modifying SDL_platform.h
 
- -- Marmalade Package Team <packages@marmalademail.com>  Wed, 11 May 2011
+ -- Sam Clegg <sam@marmalademail.com>  Wed, 11 May 2011

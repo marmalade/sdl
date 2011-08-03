@@ -1,6 +1,4 @@
 Package: sdl
-Version: 1.2.14
-Revision: 6
 Maintainer: Marmalade Package Team <packages@ideaworkslabs.com>
 Mkbs: SDL.mkb
 Description: |
@@ -8,17 +6,18 @@ Description: |
  SDL is a library that allows programs portable low level access to a video
  framebuffer, audio output, mouse, and keyboard.
 Contents-Source:
- - SDL.config.txt
  - README.rst
+ - SDL.config.txt
+ - SDL-build.mkf
+ - SDL.mkf
+ - SDL.mkb
 
  - upstream/include/SDL_config_s3e.h
  - upstream/include/SDL_config.h
-
  - upstream/src/audio/SDL_audio.c
  - upstream/src/audio/SDL_sysaudio.h
  - upstream/src/video/SDL_video.c
  - upstream/src/video/SDL_sysvideo.h
-
  - upstream/src/audio/s3e/SDL_s3eaudio.h
  - upstream/src/audio/s3e/SDL_s3eaudio.c
  - upstream/src/video/s3e/SDL_s3evideo.h
@@ -29,9 +28,7 @@ Contents-Source:
  - upstream/src/video/s3e/SDL_s3emouse.c
  - upstream/src/timer/s3e/SDL_timer.c
  - upstream/src/timer/s3e/SDL_systimer.c
- - SDL-build.mkf
- - SDL.mkf
- - SDL.mkb
+
  - example/testbitmap.mkb
  - example/testplatform.mkb
  - example/testsprite.mkb
