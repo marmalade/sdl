@@ -1,3 +1,9 @@
+sdl (1.2.14-8)
+
+  * SDL_config.h: check for __S3E__ before __MACOSX__ to fix OSX build.
+
+ -- Sam Clegg <sam@marmalademail.com>  Thu, 04 Aug 2011 17:10:34 +0000
+
 sdl (1.2.14-7)
 
   * package.yml: remove Version and Revision fields.
